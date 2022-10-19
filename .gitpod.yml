@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - command: quarto preview main.qmd --port 4444
+
+ports:
+  - port: 4444
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - quarto.quarto
